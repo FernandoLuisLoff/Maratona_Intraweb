@@ -1,0 +1,35 @@
+unit uFrmPadrao;
+
+interface
+
+uses
+  Template.StarAdmin,
+
+  Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes, IWVCLComponent,
+  IWBaseLayoutComponent, IWBaseContainerLayout, IWContainerLayout,
+  IWTemplateProcessorHTML;
+
+type
+  TFrmPadrao = class(TIWAppForm)
+    TPS: TIWTemplateProcessorHTML;
+    procedure TPSUnknownTag(const AName: string; var VValue: string);
+  public
+  end;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmPadrao.TPSUnknownTag(const AName: string; var VValue: string);
+begin
+
+  if AName = 'head' then
+  VValue := Get_Head_Login;
+
+  if AName = 'footer' then
+  VValue := Get_Footer_Login;
+
+
+end;
+
+end.

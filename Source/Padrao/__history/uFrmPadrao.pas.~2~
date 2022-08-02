@@ -1,0 +1,17 @@
+unit uFrmPadrao;
+
+interface
+
+uses
+  Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes;
+
+type
+  TFrmPadrao = class(TIWAppForm)
+  public
+  end;
+
+implementation
+
+{$R *.dfm}
+
+end.
