@@ -3,23 +3,28 @@ unit uFrmLogin;
 interface
 
 uses
+
+  MaratonaIntraWeb.SweetAlert2,
+
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uFrmPadrao, IWCompButton,
   IWVCLBaseControl, IWBaseControl, IWBaseHTMLControl, IWControl, IWCompEdit,
   IWVCLComponent, IWBaseLayoutComponent, IWBaseContainerLayout,
-  IWContainerLayout, IWTemplateProcessorHTML;
+  IWContainerLayout, IWTemplateProcessorHTML, IWHTMLTag, uFrmIndex;
 
 type
   TFrmLogin = class(TFrmPadrao)
-    IWEdit1: TIWEdit;
-    IWEdit2: TIWEdit;
+    edtUsuario: TIWEdit;
+    edtSenha: TIWEdit;
     Login: TIWButton;
     Recuperar: TIWButton;
     procedure LoginAsyncClick(Sender: TObject; EventParams: TStringList);
-    procedure RecuperarAsyncClick(Sender: TObject; EventParams: TStringList);
+    procedure edtSenhaHTMLTag(ASender: TObject; ATag: TIWHTMLTag);
+    procedure edtUsuarioHTMLTag(ASender: TObject; ATag: TIWHTMLTag);
   private
     { Private declarations }
   public
+    FrmIndex : TFrmIndex;
     { Public declarations }
   end;
 
@@ -30,22 +35,39 @@ implementation
 
 {$R *.dfm}
 
-procedure TFrmLogin.LoginAsyncClick(Sender: TObject; EventParams: TStringList);
+procedure TFrmLogin.edtSenhaHTMLTag(ASender: TObject; ATag: TIWHTMLTag);
 begin
   inherited;
 
-    WebApplication.ShowMessage('Clicou em Login');
+  Atag.Add('placeholder="**************"');
 
 end;
 
-
-
-procedure TFrmLogin.RecuperarAsyncClick(Sender: TObject;
-  EventParams: TStringList);
+procedure TFrmLogin.edtUsuarioHTMLTag(ASender: TObject; ATag: TIWHTMLTag);
 begin
   inherited;
 
-    WebApplication.ShowMessage('Clicou em Login');
+  Atag.Add('placeholder="Informe o nome do usuario"');
+
+end;
+
+procedure TFrmLogin.LoginAsyncClick(Sender: TObject; EventParams: TStringList);
+begin
+  inherited;
+    if edtUsuario.Text = '' then begin
+      WebApplication.CallBackResponse.AddJavaScriptToExecute(SwalError('Atenção','Informe seu usuário!'));
+      Exit;
+    end;
+
+    if edtSenha.Text = '' then begin
+      WebApplication.CallBackResponse.AddJavaScriptToExecute(SwalError('Atenção','Informe sua senha de acesso!'));
+      Exit;
+    end;
+
+    FrmIndex := TFrmIndex.Create(Self);
+    FrmIndex.Show
+
+    // WebApplication.CallBackResponse.AddJavaScriptToExecute(swalSuccess('Funcionou','Clicou em Login : ' + edtUsuario.Text));
 
 end;
 

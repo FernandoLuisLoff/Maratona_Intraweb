@@ -1,0 +1,5 @@
+inherited FrmPadrao1: TFrmPadrao1
+  Title = 'Dashboard'
+  DesignLeft = 8
+  DesignTop = 8
+end

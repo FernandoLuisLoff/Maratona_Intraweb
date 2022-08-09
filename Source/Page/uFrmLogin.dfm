@@ -1,27 +1,32 @@
 inherited FrmLogin: TFrmLogin
+  Title = 'Login - Maratona IntraWeb'
   DesignLeft = 8
   DesignTop = 8
-  object IWEdit1: TIWEdit [0]
+  object edtUsuario: TIWEdit [0]
     Left = 208
     Top = 106
     Width = 185
     Height = 21
+    OnHTMLTag = edtUsuarioHTMLTag
+    Css = 'form-control'
     Font.Color = clNone
     Font.Size = 10
     Font.Style = []
-    FriendlyName = 'IWEdit1'
+    FriendlyName = 'EdtUsuario'
     SubmitOnAsyncEvent = True
     TabOrder = 0
   end
-  object IWEdit2: TIWEdit [1]
+  object edtSenha: TIWEdit [1]
     Left = 208
     Top = 133
     Width = 185
     Height = 21
+    OnHTMLTag = edtSenhaHTMLTag
+    Css = 'form-control'
     Font.Color = clNone
     Font.Size = 10
     Font.Style = []
-    FriendlyName = 'IWEdit2'
+    FriendlyName = 'edtSenha'
     SubmitOnAsyncEvent = True
     TabOrder = 1
     PasswordPrompt = True
@@ -52,7 +57,6 @@ inherited FrmLogin: TFrmLogin
     Font.Style = []
     FriendlyName = 'Recuperar'
     TabOrder = 3
-    OnAsyncClick = RecuperarAsyncClick
   end
   inherited TPS: TIWTemplateProcessorHTML
     Left = 400

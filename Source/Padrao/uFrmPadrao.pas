@@ -4,6 +4,7 @@ interface
 
 uses
   Template.StarAdmin,
+  MaratonaIntraWeb.SweetAlert2,
 
   Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes, IWVCLComponent,
   IWBaseLayoutComponent, IWBaseContainerLayout, IWContainerLayout,
@@ -43,11 +44,18 @@ begin
 
   if AName = 'head' then
     if Self.Name = 'FrmLogin' then
-      VValue := Get_Head_Login;
+      VValue := Get_Head_Login + Get_Lib_Css_SweetAlert2
+    else
+      VValue := Get_Head;
 
   if AName = 'footer' then
     if Self.Name = 'FrmLogin' then
-      VValue := Get_Footer_Login;
+      VValue := Get_Footer_Login + Get_Lib_JS_SweetAlert2
+    else
+      VValue := Get_Footer;
+
+  if AName = 'title' then
+    VValue := Self.Title;
 
 end;
 

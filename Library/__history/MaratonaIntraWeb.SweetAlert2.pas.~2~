@@ -1,0 +1,27 @@
+unit MaratonaIntraWeb.SweetAlert2;
+
+interface
+
+  function swalSuccess(pTitulo, pTexto: String): String;
+  function swalError(pTitulo, pTexto: String): String;
+
+implementation
+
+uses
+  System.SysUtils;
+
+Function Lib_CSS_SweetAlert2 :String;
+begin
+  Result := '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js">'
+end;
+
+function swalError(pTitulo, pTexto: String): String;
+var
+  strAux : String;
+begin
+  strAux := 'swal.fire("' + pTitulo +'", "' + pTexto + '", "error");';
+
+  Result := strAux;
+end;
+
+end.
