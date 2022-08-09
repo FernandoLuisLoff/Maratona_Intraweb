@@ -129,6 +129,7 @@
             <DesignClass>TIWAppForm</DesignClass>
         </DCCReference>
         <DCCReference Include="..\Library\Maratona.App.pas"/>
+        <DCCReference Include="..\Library\Maratona.DataBase.Menu.App.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -155,13 +156,13 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
-                <DeployFile LocalName="..\..\Cloud\MaratonaIntraWeb.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="..\Cloud\MaratonaIntraWeb.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win64">
                         <RemoteName>MaratonaIntraWeb.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="..\..\Cloud\MaratonaIntraWeb.rsm" Configuration="Debug" Class="DebugSymbols">
+                <DeployFile LocalName="..\Cloud\MaratonaIntraWeb.rsm" Configuration="Debug" Class="DebugSymbols">
                     <Platform Name="Win64">
                         <RemoteName>MaratonaIntraWeb.rsm</RemoteName>
                         <Overwrite>true</Overwrite>

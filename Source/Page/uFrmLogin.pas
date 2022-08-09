@@ -4,13 +4,17 @@ interface
 
 uses
 
+  uServerController,
+  uFrmPadrao,
+  uFrmIndex,
+
   MaratonaIntraWeb.SweetAlert2,
 
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uFrmPadrao, IWCompButton,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, IWCompButton,
   IWVCLBaseControl, IWBaseControl, IWBaseHTMLControl, IWControl, IWCompEdit,
   IWVCLComponent, IWBaseLayoutComponent, IWBaseContainerLayout,
-  IWContainerLayout, IWTemplateProcessorHTML, IWHTMLTag, uFrmIndex;
+  IWContainerLayout, IWTemplateProcessorHTML, IWHTMLTag;
 
 type
   TFrmLogin = class(TFrmPadrao)
@@ -64,10 +68,11 @@ begin
       Exit;
     end;
 
+    UserSession.UserId := 1;
+    UserSession.UserLogado := edtUsuario.Text;
+
     FrmIndex := TFrmIndex.Create(Self);
     FrmIndex.Show
-
-    // WebApplication.CallBackResponse.AddJavaScriptToExecute(swalSuccess('Funcionou','Clicou em Login : ' + edtUsuario.Text));
 
 end;
 

@@ -1,5 +1,5 @@
 inherited FrmLogin: TFrmLogin
-  Title = 'Login - Maratona IntraWeb'
+  Title = 'Login'
   DesignLeft = 8
   DesignTop = 8
   object edtUsuario: TIWEdit [0]

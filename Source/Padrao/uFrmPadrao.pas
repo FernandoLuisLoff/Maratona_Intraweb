@@ -8,6 +8,7 @@ uses
 
   Maratona.app,
   Template.StarAdmin,
+  Maratona.DataBase.Menu.App,
   MaratonaIntraWeb.SweetAlert2,
 
   Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes, IWVCLComponent,
@@ -46,23 +47,17 @@ end;
 procedure TFrmPadrao.TPSUnknownTag(const AName: string; var VValue: string);
 begin
 
-  if AName = 'AppName' then
-    VValue := AppName;
+  if AName = 'Aplicacao' then
+    VValue := Aplicacao;
 
   if AName = 'SoftHouse' then
     VValue := SoftHouse;
 
-  if AName = 'Version' then
-    VValue := Version;
-
-  if AName = 'User_Menu' then
-    VValue := UserSession.UserLogado;
+  if AName = 'Versao' then
+    VValue := Versao;
 
   if AName = 'User_Top' then
     VValue := UserSession.UserLogado;
-
-
-
 
   if AName = 'head' then
     if Self.Name = 'FrmLogin' then
@@ -78,6 +73,9 @@ begin
 
   if AName = 'title' then
     VValue := Self.Title;
+
+  if Aname = 'menu' then
+    VValue := Get_Menu_By_User(UserSession.UserId);
 
 end;
 

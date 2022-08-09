@@ -13,7 +13,8 @@ uses
   Template.StarAdmin in '..\Library\Template.StarAdmin.pas',
   MaratonaIntraWeb.SweetAlert2 in '..\Library\MaratonaIntraWeb.SweetAlert2.pas',
   uFrmIndex in '..\Source\Page\uFrmIndex.pas' {FrmIndex: TIWAppForm},
-  Maratona.App in '..\Library\Maratona.App.pas';
+  Maratona.App in '..\Library\Maratona.App.pas',
+  Maratona.DataBase.Menu.App in '..\Library\Maratona.DataBase.Menu.App.pas';
 
 {$R *.res}
 
