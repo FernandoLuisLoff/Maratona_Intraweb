@@ -13,13 +13,41 @@ uses
 type
   TIWUserSession = class(TIWUserSessionBase)
   private
+    FUserEmail: String;
+    FUserId: Longint;
+    FUserLogado: String;
+    procedure SetUserEmail(const Value: String);
+    procedure SetUserId(const Value: Longint);
+    procedure SetUserLogado(const Value: String);
     { Private declarations }
   public
+
+    Property UserId:Longint read FUserId write SetUserId;
+    Property UserLogado:String read FUserLogado write SetUserLogado;
+    Property UserEmail:String read FUserEmail write SetUserEmail;
+
     { Public declarations }
   end;
 
 implementation
 
 {$R *.dfm}
+
+{ TIWUserSession }
+
+procedure TIWUserSession.SetUserEmail(const Value: String);
+begin
+  FUserEmail := Value;
+end;
+
+procedure TIWUserSession.SetUserId(const Value: Longint);
+begin
+  FUserId := Value;
+end;
+
+procedure TIWUserSession.SetUserLogado(const Value: String);
+begin
+  FUserLogado := Value;
+end;
 
 end.

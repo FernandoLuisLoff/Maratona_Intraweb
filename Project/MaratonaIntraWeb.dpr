@@ -12,7 +12,8 @@ uses
   uFrmLogin in '..\Source\Page\uFrmLogin.pas' {FrmLogin: TIWAppForm},
   Template.StarAdmin in '..\Library\Template.StarAdmin.pas',
   MaratonaIntraWeb.SweetAlert2 in '..\Library\MaratonaIntraWeb.SweetAlert2.pas',
-  uFrmIndex in '..\Source\Page\uFrmIndex.pas' {FrmIndex: TIWAppForm};
+  uFrmIndex in '..\Source\Page\uFrmIndex.pas' {FrmIndex: TIWAppForm},
+  Maratona.App in '..\Library\Maratona.App.pas';
 
 {$R *.res}
 
