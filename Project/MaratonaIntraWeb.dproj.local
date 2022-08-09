@@ -2,30 +2,31 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2022/08/02 09:27:49.000.789,=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Unit1.pas</Transaction>
-    <Transaction>2022/08/02 09:27:51.000.319,=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\UserSessionUnit.pas</Transaction>
     <Transaction>2022/08/02 09:27:51.000.209,=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\ServerController.pas</Transaction>
-    <Transaction>2022/08/02 09:30:38.000.584,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Project\MaratonaIntraWeb.dproj=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\MaratonaIntraWeb.dproj</Transaction>
-    <Transaction>2022/08/02 09:32:04.000.609,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Source\Padrao\uFrmPadrao.pas=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Unit1.pas</Transaction>
-    <Transaction>2022/08/02 09:32:04.000.609,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Source\Padrao\uFrmPadrao.dfm=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Unit1.dfm</Transaction>
-    <Transaction>2022/08/02 09:32:43.000.697,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Source\Controller\uUserSessionUnit.pas=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\UserSessionUnit.pas</Transaction>
-    <Transaction>2022/08/02 09:32:43.000.697,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Source\Controller\uUserSessionUnit.dfm=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\UserSessionUnit.dfm</Transaction>
-    <Transaction>2022/08/02 09:33:59.000.443,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Source\Controller\uServerController.pas=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\ServerController.pas</Transaction>
-    <Transaction>2022/08/02 09:33:59.000.443,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Source\Controller\uServerController.dfm=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\ServerController.dfm</Transaction>
+    <Transaction>2022/08/02 09:27:51.000.319,=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\UserSessionUnit.pas</Transaction>
+    <Transaction>2022/08/02 09:30:38.000.584,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\MaratonaIntraWeb.dproj=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Project\MaratonaIntraWeb.dproj</Transaction>
+    <Transaction>2022/08/02 09:32:04.000.609,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Unit1.pas=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Source\Padrao\uFrmPadrao.pas</Transaction>
+    <Transaction>2022/08/02 09:32:04.000.609,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Unit1.dfm=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Source\Padrao\uFrmPadrao.dfm</Transaction>
+    <Transaction>2022/08/02 09:32:43.000.697,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\UserSessionUnit.dfm=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Source\Controller\uUserSessionUnit.dfm</Transaction>
+    <Transaction>2022/08/02 09:32:43.000.697,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\UserSessionUnit.pas=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Source\Controller\uUserSessionUnit.pas</Transaction>
+    <Transaction>2022/08/02 09:33:59.000.443,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\ServerController.dfm=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Source\Controller\uServerController.dfm</Transaction>
+    <Transaction>2022/08/02 09:33:59.000.443,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\ServerController.pas=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Source\Controller\uServerController.pas</Transaction>
     <Transaction>2022/08/02 09:40:53.000.598,=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Project\Unit1.pas</Transaction>
-    <Transaction>2022/08/02 09:43:48.000.939,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Source\Page\uFrmLogin.pas=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Project\Unit1.pas</Transaction>
-    <Transaction>2022/08/02 09:43:48.000.939,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Source\Page\uFrmLogin.dfm=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Project\Unit1.dfm</Transaction>
+    <Transaction>2022/08/02 09:43:48.000.939,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Project\Unit1.dfm=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Source\Page\uFrmLogin.dfm</Transaction>
+    <Transaction>2022/08/02 09:43:48.000.939,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Project\Unit1.pas=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Source\Page\uFrmLogin.pas</Transaction>
     <Transaction>2022/08/02 10:14:59.000.262,=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Project\Unit1.pas</Transaction>
-    <Transaction>2022/08/02 10:16:12.000.376,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Project\Unit1.pas=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Library\Template.StarAdmin.pas</Transaction>
+    <Transaction>2022/08/02 10:16:12.000.376,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Library\Template.StarAdmin.pas=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Project\Unit1.pas</Transaction>
     <Transaction>2022/08/08 09:33:57.000.435,=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Project\Unit1.pas</Transaction>
     <Transaction>2022/08/08 09:34:27.000.317,=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Project\Unit1.pas</Transaction>
     <Transaction>2022/08/08 09:34:48.000.677,=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Project\Unit1.pas</Transaction>
     <Transaction>2022/08/08 09:34:58.000.366,=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Project\Unit1.pas</Transaction>
-    <Transaction>2022/08/08 09:36:50.000.020,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Library\MaratonaIntraWeb.SweetAlert2.pas=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Project\Unit1.pas</Transaction>
+    <Transaction>2022/08/08 09:36:50.000.020,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Project\Unit1.pas=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Library\MaratonaIntraWeb.SweetAlert2.pas</Transaction>
     <Transaction>2022/08/08 16:00:15.000.204,=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Project\Unit1.pas</Transaction>
-    <Transaction>2022/08/08 16:00:56.000.159,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Source\Page\uFrmIndex.dfm=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Project\Unit1.dfm</Transaction>
-    <Transaction>2022/08/08 16:00:56.000.159,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Source\Page\uFrmIndex.pas=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Project\Unit1.pas</Transaction>
-    <Transaction>2022/08/09 13:56:01.908,=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Maratona_Intraweb\Project\Unit1.pas</Transaction>
-    <Transaction>2022/08/09 13:56:48.570,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Maratona_Intraweb\Library\Maratona.App.pas=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Maratona_Intraweb\Project\Unit1.pas</Transaction>
+    <Transaction>2022/08/08 16:00:56.000.159,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Project\Unit1.dfm=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Source\Page\uFrmIndex.dfm</Transaction>
+    <Transaction>2022/08/08 16:00:56.000.159,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Project\Unit1.pas=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Source\Page\uFrmIndex.pas</Transaction>
+    <Transaction>2022/08/09 13:56:01.000.908,=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Maratona_Intraweb\Project\Unit1.pas</Transaction>
+    <Transaction>2022/08/09 13:56:48.000.570,C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Maratona_Intraweb\Project\Unit1.pas=C:\Users\ferlo\OneDrive\Área de Trabalho\MaratonaIntraWeb\Maratona_Intraweb\Library\Maratona.App.pas</Transaction>
+    <Transaction>2022/08/09 14:21:24.000.943,C:\Users\ferlo\OneDrive\Área de Trabalho\Maratona_Intraweb\Project\MaratonaIntraWeb.dproj=C:\Users\ferlo\OneDrive\Área de Trabalho\Maratona_Intraweb\Project\MaratonaIntraWeb.dproj</Transaction>
   </Transactions>
 	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="..\..\Maratona_Intraweb"/>

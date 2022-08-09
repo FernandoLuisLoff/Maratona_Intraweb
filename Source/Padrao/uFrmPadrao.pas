@@ -3,6 +3,10 @@ unit uFrmPadrao;
 interface
 
 uses
+
+  uServerController,
+
+  Maratona.app,
   Template.StarAdmin,
   MaratonaIntraWeb.SweetAlert2,
 
@@ -41,6 +45,20 @@ end;
 
 procedure TFrmPadrao.TPSUnknownTag(const AName: string; var VValue: string);
 begin
+
+  if AName = 'AppName' then
+    VValue := AppName;
+
+  if AName = 'Version' then
+    VValue := Version;
+
+  if AName = 'User_Menu' then
+    VValue := UserSession.UserLogado;
+
+  if AName = 'User_Top' then
+    VValue := UserSession.UserLogado;
+
+
 
   if AName = 'head' then
     if Self.Name = 'FrmLogin' then
