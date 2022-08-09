@@ -39,7 +39,7 @@ procedure TFrmLogin.edtSenhaHTMLTag(ASender: TObject; ATag: TIWHTMLTag);
 begin
   inherited;
 
-  Atag.Add('placeholder="**************"');
+  Atag.Add('placeholder="*****"');
 
 end;
 
@@ -47,7 +47,7 @@ procedure TFrmLogin.edtUsuarioHTMLTag(ASender: TObject; ATag: TIWHTMLTag);
 begin
   inherited;
 
-  Atag.Add('placeholder="Informe o nome do usuario"');
+  Atag.Add('placeholder="Informe o Usuário"');
 
 end;
 

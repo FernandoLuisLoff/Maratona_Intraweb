@@ -49,6 +49,9 @@ begin
   if AName = 'AppName' then
     VValue := AppName;
 
+  if AName = 'SoftHouse' then
+    VValue := SoftHouse;
+
   if AName = 'Version' then
     VValue := Version;
 
@@ -57,6 +60,7 @@ begin
 
   if AName = 'User_Top' then
     VValue := UserSession.UserLogado;
+
 
 
 
