@@ -42,13 +42,12 @@ begin
 
   end;
 
+  Self.Title := Self.Title+' - '+Aplicacao;
+
 end;
 
 procedure TFrmPadrao.TPSUnknownTag(const AName: string; var VValue: string);
 begin
-
-  if AName = 'Aplicacao' then
-    VValue := Aplicacao;
 
   if AName = 'SoftHouse' then
     VValue := SoftHouse;
@@ -70,9 +69,6 @@ begin
       VValue := Get_Footer_Login + Get_Lib_JS_SweetAlert2
     else
       VValue := Get_Footer;
-
-  if AName = 'title' then
-    VValue := Self.Title;
 
   if Aname = 'menu' then
     VValue := Get_Menu_By_User(UserSession.UserId);

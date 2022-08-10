@@ -11,8 +11,8 @@ begin
 
   Result :=
 
-    ' <ul class="nav">
-                                                                                                 '+
+    ' <ul class="nav">                                                                                             '+
+
     '        <li class="nav-item nav-profile">                                                                     '+
     '          <a href="#" class="nav-link">                                                                       '+
     '            <div class="profile-image">                                                                       '+
@@ -24,18 +24,18 @@ begin
     '              <p class="designation">Premium user</p>                                                         '+
     '            </div>                                                                                            '+
     '          </a>                                                                                                '+
-    '       </li>
-                                                                                                      '+
-    '        <li class="nav-item nav-category">Main Menu</li>
+    '       </li>                                                                                                  '+
 
-    //Menu                                                     '+
+    '        <li class="nav-item nav-category">Main Menu</li>                                                      '+
+
+    //Menu
     '        <li class="nav-item active">                                                                          '+
     '          <a class="nav-link" href="../../index.html">                                                        '+
     '            <i class="menu-icon typcn typcn-document-text"></i>                                               '+
     '            <span class="menu-title">Dashboard</span>                                                         '+
     '          </a>                                                                                                '+
-    '        </li>
-                                                                                                     '+
+    '        </li>                                                                                                 '+
+
     '        <li class="nav-item">                                                                                 '+
     '          <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">'+
     '            <i class="menu-icon typcn typcn-coffee"></i>                                                      '+
