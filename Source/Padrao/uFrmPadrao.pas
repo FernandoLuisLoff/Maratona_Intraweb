@@ -13,17 +13,31 @@ uses
 
   Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes, IWVCLComponent,
   IWBaseLayoutComponent, IWBaseContainerLayout, IWContainerLayout,
-  IWTemplateProcessorHTML;
+  IWTemplateProcessorHTML, Vcl.Controls, IWVCLBaseControl, IWBaseControl,
+  IWBaseHTMLControl, IWControl, IWCompButton;
 
 type
   TFrmPadrao = class(TIWAppForm)
     TPS: TIWTemplateProcessorHTML;
+    LISTAPESSOAS: TIWButton;
+    FINALIZAR: TIWButton;
+    DASHBOARD: TIWButton;
     procedure TPSUnknownTag(const AName: string; var VValue: string);
     procedure IWAppFormCreate(Sender: TObject);
+    procedure LISTAPESSOASAsyncClick(Sender: TObject; EventParams: TStringList);
+    procedure FINALIZARAsyncClick(Sender: TObject; EventParams: TStringList);
+    procedure DASHBOARDAsyncClick(Sender: TObject; EventParams: TStringList);
   public
+    DescPageHead:String;
   end;
 
+var
+  Titulo : String;
+
 implementation
+
+uses
+  uFrmListaPessoas, uFrmLogin, uFrmIndex;
 
 {$R *.dfm}
 
@@ -46,6 +60,30 @@ begin
 
 end;
 
+procedure TFrmPadrao.FINALIZARAsyncClick(Sender: TObject;
+  EventParams: TStringList);
+begin
+  Self.Release;
+  FrmLogin := TFrmLogin.Create(Self);
+  FrmLogin.Show;
+end;
+
+procedure TFrmPadrao.DASHBOARDAsyncClick(Sender: TObject;
+  EventParams: TStringList);
+begin
+  Self.Release;
+  FrmIndex := TFrmIndex.Create(nil);
+  FrmIndex.Show;
+end;
+
+procedure TFrmPadrao.LISTAPESSOASAsyncClick(Sender: TObject;
+  EventParams: TStringList);
+begin
+  Self.Release;
+  FrmListaPessoas := TFrmListaPessoas.Create(nil);
+  FrmListaPessoas.Show;
+end;
+
 procedure TFrmPadrao.TPSUnknownTag(const AName: string; var VValue: string);
 begin
 
@@ -64,11 +102,18 @@ begin
     else
       VValue := Get_Head;
 
+  if AName = 'PageHead' then
+    VValue := Get_Page_Head(UserSession.DescPageHead);
+
   if AName = 'footer' then
-    if Self.Name = 'FrmLogin' then
+    if Self.Name = 'FrmLogin' then begin
       VValue := Get_Footer_Login + Get_Lib_JS_SweetAlert2
-    else
-      VValue := Get_Footer;
+    end else
+      if Self.Name = 'FrmListaPessoas' then begin
+        VValue := Get_Footer + JqueryMaskPlugin
+      end else begin
+        VValue := Get_Footer;
+      end;
 
   if Aname = 'menu' then
     VValue := Get_Menu_By_User(UserSession.UserId);

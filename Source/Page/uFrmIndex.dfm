@@ -2,18 +2,22 @@ inherited FrmIndex: TFrmIndex
   Title = 'Dashboard'
   DesignLeft = 8
   DesignTop = 8
-  object FINALIZAR: TIWButton [0]
+  inherited LISTAPESSOAS: TIWButton
+    Left = 48
+    Top = 110
+    ExplicitLeft = 48
+    ExplicitTop = 110
+  end
+  inherited FINALIZAR: TIWButton
     Left = 48
     Top = 48
-    Width = 75
-    Height = 25
-    Caption = 'BTNFINALIZAR'
-    Color = clBtnFace
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
-    FriendlyName = 'FINALIZAR'
-    TabOrder = 0
-    OnAsyncClick = FINALIZARAsyncClick
+    ExplicitLeft = 48
+    ExplicitTop = 48
+  end
+  inherited DASHBOARD: TIWButton
+    Left = 48
+    Top = 79
+    ExplicitLeft = 48
+    ExplicitTop = 79
   end
 end

@@ -1,0 +1,23 @@
+inherited FrmCadastroPessoas: TFrmCadastroPessoas
+  Title = 'Cadastro de Pessoas'
+  DesignLeft = 8
+  DesignTop = 8
+  inherited LISTAPESSOAS: TIWButton
+    Left = 3
+    Top = 65
+    ExplicitLeft = 3
+    ExplicitTop = 65
+  end
+  inherited FINALIZAR: TIWButton
+    Left = 3
+    Top = 3
+    ExplicitLeft = 3
+    ExplicitTop = 3
+  end
+  inherited DASHBOARD: TIWButton
+    Left = 3
+    Top = 34
+    ExplicitLeft = 3
+    ExplicitTop = 34
+  end
+end

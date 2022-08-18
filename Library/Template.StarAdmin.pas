@@ -4,13 +4,26 @@ interface
 
   const PathTheme = 'app/';
 
+  Function JqueryMaskPlugin : String;
+
   Function Get_Head : String;
   Function Get_Footer : String;
 
   Function Get_Head_Login : String;
   Function Get_Footer_Login : String;
 
+  Function Get_Page_Head(Titulo:String) : String;
+
 implementation
+
+uses
+  System.SysUtils;
+
+Function JqueryMaskPlugin : String;
+begin
+  Result := ' <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> '+
+            ' <script src="../js/jquery.mask.min.js"></script>                                       ';
+end;
 
 Function Get_Head : String;
 begin
@@ -62,6 +75,31 @@ begin
               ' <script src="' + PathTheme + 'js/shared/off-canvas.js"></script>                           '+
               ' <script src="' + PathTheme + 'js/shared/misc.js"></script>                                 '+
               ' <script src="' + PathTheme + 'js/shared/jquery.cookie.js" type="text/javascript"></script> ';
+
+end;
+
+Function Get_Page_Head(Titulo:String) : String;
+begin
+
+  Result := ' <div class="row page-title-header">                                    '+
+            '  <div class="col-12">                                                  '+
+            '    <div class="page-header">                                           '+
+            '      <h4 class="page-title">'+Titulo+'</h4>                             '+
+            '<div class="quick-link-wrapper w-100 d-md-flex flex-md-wrap text-right">'+
+            '        <ul class="quick-links ml-auto">                                ';
+
+            if uppercase(Titulo) = 'HOME' then begin
+              Result := Result + ' <li><a href="#">Home</a></li>                     ';
+            end else begin
+              Result := Result + ' <li><a href="#">Home</a></li>                     '+
+                                 ' <li><a href="#">'+Titulo+'</a></li>               ';
+            end;
+
+            Result := Result + '        </ul>                                        '+
+                               '      </div>                                         '+
+                               '    </div>                                           '+
+                               '  </div>                                             '+
+                               ' </div>                                              ';
 
 end;
 

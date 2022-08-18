@@ -1,0 +1,33 @@
+inherited FrmIndex: TFrmIndex
+  Title = 'Dashboard'
+  DesignLeft = 8
+  DesignTop = 8
+  object FINALIZAR: TIWButton [0]
+    Left = 48
+    Top = 48
+    Width = 121
+    Height = 25
+    Caption = 'BTNFINALIZAR'
+    Color = clBtnFace
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'FINALIZAR'
+    TabOrder = 0
+    OnAsyncClick = FINALIZARAsyncClick
+  end
+  object LISTAPESSOAS: TIWButton [1]
+    Left = 48
+    Top = 79
+    Width = 121
+    Height = 25
+    Caption = 'BTNLISTAPESSOAS'
+    Color = clBtnFace
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'LISTAPESSOAS'
+    TabOrder = 1
+    OnAsyncClick = LISTAPESSOASAsyncClick
+  end
+end

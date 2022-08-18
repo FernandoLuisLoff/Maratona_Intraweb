@@ -1,0 +1,85 @@
+unit uFrmPadrao;
+
+interface
+
+uses
+
+  uServerController,
+
+  Maratona.app,
+  Template.StarAdmin,
+  Maratona.DataBase.Menu.App,
+  MaratonaIntraWeb.SweetAlert2,
+
+  Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes, IWVCLComponent,
+  IWBaseLayoutComponent, IWBaseContainerLayout, IWContainerLayout,
+  IWTemplateProcessorHTML;
+
+type
+  TFrmPadrao = class(TIWAppForm)
+    TPS: TIWTemplateProcessorHTML;
+    procedure TPSUnknownTag(const AName: string; var VValue: string);
+    procedure IWAppFormCreate(Sender: TObject);
+  public
+  end;
+
+var
+  Titulo : String;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmPadrao.IWAppFormCreate(Sender: TObject);
+begin
+
+  if Self.Name = 'FrmLogin' then begin
+
+    TPS.MasterTemplate := '';
+    TPS.Templates.Default := 'app/'+Self.Name+'.html';
+
+  end else begin
+
+    TPS.MasterTemplate := 'app/master.html';
+    TPS.Templates.Default := 'app/'+Self.Name+'.html';
+
+  end;
+
+  Titulo := Self.Title;
+  Self.Title := Self.Title+' - '+Aplicacao;
+
+end;
+
+procedure TFrmPadrao.TPSUnknownTag(const AName: string; var VValue: string);
+begin
+
+  if AName = 'SoftHouse' then
+    VValue := SoftHouse;
+
+  if AName = 'Versao' then
+    VValue := Versao;
+
+  if AName = 'User_Top' then
+    VValue := UserSession.UserLogado;
+
+  if AName = 'head' then
+    if Self.Name = 'FrmLogin' then
+      VValue := Get_Head_Login + Get_Lib_Css_SweetAlert2
+    else
+      VValue := Get_Head;
+
+  if AName = 'PageHead' then
+    VValue := Get_Page_Head(UserSession.DescPageHead);
+
+  if AName = 'footer' then
+    if Self.Name = 'FrmLogin' then
+      VValue := Get_Footer_Login + Get_Lib_JS_SweetAlert2
+    else
+      VValue := Get_Footer;
+
+  if Aname = 'menu' then
+    VValue := Get_Menu_By_User(UserSession.UserId);
+
+end;
+
+end.

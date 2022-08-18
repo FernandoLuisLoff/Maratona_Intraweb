@@ -16,15 +16,19 @@ type
     FUserEmail: String;
     FUserId: Longint;
     FUserLogado: String;
+    FDescPageHead: String;
     procedure SetUserEmail(const Value: String);
     procedure SetUserId(const Value: Longint);
     procedure SetUserLogado(const Value: String);
+    procedure SetDescPageHead(const Value: String);
     { Private declarations }
   public
 
     Property UserId:Longint read FUserId write SetUserId;
     Property UserLogado:String read FUserLogado write SetUserLogado;
     Property UserEmail:String read FUserEmail write SetUserEmail;
+
+    Property DescPageHead:String read FDescPageHead write SetDescPageHead;
 
     { Public declarations }
   end;
@@ -34,6 +38,11 @@ implementation
 {$R *.dfm}
 
 { TIWUserSession }
+
+procedure TIWUserSession.SetDescPageHead(const Value: String);
+begin
+  FDescPageHead := Value;
+end;
 
 procedure TIWUserSession.SetUserEmail(const Value: String);
 begin

@@ -1,0 +1,23 @@
+program MaratonaIntraWeb;
+
+uses
+  IWRtlFix,
+  IWJclStackTrace,
+  IWJclDebug,
+  Forms,
+  IWStart,
+  uFrmPadrao in '..\Source\Padrao\uFrmPadrao.pas' {FrmPadrao: TIWAppForm},
+  uServerController in '..\Source\Controller\uServerController.pas' {IWServerController: TIWServerControllerBase},
+  uUserSessionUnit in '..\Source\Controller\uUserSessionUnit.pas' {IWUserSession: TIWUserSessionBase},
+  uFrmLogin in '..\Source\Page\uFrmLogin.pas' {FrmLogin: TIWAppForm},
+  Template.StarAdmin in '..\Library\Template.StarAdmin.pas',
+  MaratonaIntraWeb.SweetAlert2 in '..\Library\MaratonaIntraWeb.SweetAlert2.pas',
+  uFrmIndex in '..\Source\Page\uFrmIndex.pas' {FrmIndex: TIWAppForm},
+  Maratona.App in '..\Library\Maratona.App.pas',
+  Maratona.DataBase.Menu.App in '..\Library\Maratona.DataBase.Menu.App.pas';
+
+{$R *.res}
+
+begin
+  TIWStart.Execute(True);
+end.

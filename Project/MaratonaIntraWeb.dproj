@@ -133,6 +133,11 @@
         </DCCReference>
         <DCCReference Include="..\Library\Maratona.App.pas"/>
         <DCCReference Include="..\Library\Maratona.DataBase.Menu.App.pas"/>
+        <DCCReference Include="..\Source\Page\uFrmListaPessoas.pas">
+            <Form>FrmListaPessoas</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TIWAppForm</DesignClass>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -161,21 +166,15 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
-                <DeployFile LocalName="Win32\Debug\MaratonaIntraWeb.exe" Configuration="Debug" Class="ProjectOutput">
-                    <Platform Name="Win32">
-                        <RemoteName>MaratonaIntraWeb.exe</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="..\Cloud\MaratonaIntraWeb.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win64">
                         <RemoteName>MaratonaIntraWeb.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="..\Cloud\MaratonaIntraWeb.rsm" Configuration="Debug" Class="DebugSymbols">
-                    <Platform Name="Win64">
-                        <RemoteName>MaratonaIntraWeb.rsm</RemoteName>
+                <DeployFile LocalName="..\Cloud\MaratonaIntraWeb.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>MaratonaIntraWeb.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

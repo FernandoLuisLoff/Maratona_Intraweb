@@ -1,0 +1,5 @@
+inherited FrmCadastroPessoas: TFrmCadastroPessoas
+  Title = 'Cadastro de Pessoas'
+  DesignLeft = 8
+  DesignTop = 8
+end

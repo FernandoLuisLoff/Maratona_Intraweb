@@ -1,4 +1,0 @@
-inherited FrmPadrao1: TFrmPadrao1
-  DesignLeft = 8
-  DesignTop = 8
-end
